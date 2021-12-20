@@ -15,3 +15,9 @@ function task() {
     array.push(input.value);
     localStorage.setItem("data", JSON.stringify(array));
 }
+function reset() {
+    while (div.firstChild) {
+        div.removeChild(div.firstChild);
+    }
+    localStorage.clear();
+}
